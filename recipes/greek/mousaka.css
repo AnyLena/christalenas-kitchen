@@ -1,0 +1,18 @@
+
+header {
+  width: 800px;
+  height: 200px;
+  background: url(https://www.mygreekdish.com/wp-content/uploads/2013/05/Moussaka-recipe-Traditional-Greek-Moussaka-with-Eggplants.jpg) no-repeat center;
+}
+
+table {
+  width: 800px;
+  height: 200px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+td {
+  border: 1px solid black;
+  padding: 5px;
+}
