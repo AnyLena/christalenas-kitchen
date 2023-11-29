@@ -7,3 +7,12 @@ iframe {
     width: 100%;
     height: 90vh;
 }
+
+li span {
+    cursor: pointer;
+    transition: border-bottom,0.5s;
+}
+
+li span:hover {
+    border-bottom: 5px solid #0d5eb0;
+}
