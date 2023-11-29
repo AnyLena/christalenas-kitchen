@@ -30,7 +30,7 @@
               </a>
               <ul class="list-unstyled ps-0">
                 <li class="mb-1">
-                  <button
+                  <button onclick="handleClick('../home')"
                     class="btn btn-toggle align-items-center rounded collapsed"
                     data-bs-toggle="collapse"
                     data-bs-target="#home-collapse"
@@ -50,10 +50,10 @@
                   </button>
                   <div class="collapse" id="dashboard-collapse" style="">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                      <li><a href="#" class="link-dark rounded">Food1</a></li>
-                      <li><a href="#" class="link-dark rounded">Food2</a></li>
-                      <li><a href="#" class="link-dark rounded">Food3</a></li>
-                      <li><a href="#" class="link-dark rounded">Food4</a></li>
+                      <li onclick="handleClick('greek/mousaka')" id="mousaka">Mousaka</li>
+                      <li onclick="handleClick('greek/pastitsio')">Pastitsio</li>
+                      <li onclick="handleClick('greek/souvlaki')">Souvlaki</li>
+                      <li onclick="handleClick('greek/spanakopita')">Spanakopita</li>
                     </ul>
                   </div>
                 </li>
@@ -68,10 +68,10 @@
                   </button>
                   <div class="collapse" id="orders-collapse" style="">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                      <li><a href="#" class="link-dark rounded">Food1</a></li>
-                      <li><a href="#" class="link-dark rounded">Food2</a></li>
-                      <li><a href="#" class="link-dark rounded">Food3</a></li>
-                      <li><a href="#" class="link-dark rounded">Food4</a></li>
+                      <li onclick="handleClick('german/eintopf')" id="eintopf">Eintopf</li>
+                      <li onclick="handleClick('german/gruenkohl')" id="gruenkohl">Grünkohl</li>
+                      <li onclick="handleClick('german/labskaus')" id="labskaus">Labskaus</li>
+                      <li onclick="handleClick('german/franzbroetchen')" id="franzbroetchen">Franzbroetchen</li>
                     </ul>
                   </div>
                 </li>
@@ -93,9 +93,8 @@
    
       <div class="col-12 col-sm-8 col-lg-10">
         <iframe
-          id="recipes"
+          id="iframe"
           src="./home.html"
-          title="HunanSauce"
         ></iframe>
       </div>
     </div>
