@@ -5,7 +5,6 @@ linkClick.forEach((element) => element.addEventListener("click", changeIframe));
 
 function changeIframe(e) {
   const arr = e.target.classList;
-  console.log(arr);
 
   if (Object.values(arr).includes("greek")) {
     recipes.src = `./recipes/greek/${e.target.id}.html`;
@@ -15,6 +14,14 @@ function changeIframe(e) {
     recipes.src = `./home.html`;
   }
 }
+
+
+
+
+
+
+
+
 
 // Enriques Solution
 

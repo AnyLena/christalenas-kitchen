@@ -1,0 +1,131 @@
+
+body {
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #card {
+    width: 80%;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  
+  
+  
+  header {
+    width: 100%;
+    height: 300px;
+    background: url() no-repeat center;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header--e {
+    background: url(https://www.lidl-kochen.de/images/recipe-wide/788520/herbstlicher-gemueseeintopf-mit-wuerstchen-321272.jpg) no-repeat center;
+
+  }
+
+  .header--g {
+    background: url(http://www.die-bloechliger.de/wp-content/uploads/2018/01/Fotolia_58142444_M.jpg) no-repeat;
+    background-size: cover;
+    background-position: center -150px;
+  }
+
+  .header--l {
+    background: url(https://germanculture.com.ua/wp-content/uploads/2017/01/Labskaus-1024x612.jpg) no-repeat center;
+  }
+
+  .header--f {
+    background: url(https://ichkocheheute.de/wp-content/uploads/2019/12/kleiner-P1480787-768x432.jpg) no-repeat center;
+    background-size: cover;
+  }
+  
+  .h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 100px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  
+  
+  table {
+    width: 800px;
+    height: 200px;
+    box-shadow: 0 0 10px rgba(179, 178, 178, 0.5);
+    margin: 3rem auto;
+    border: 1px solid rgb(155, 152, 152);
+  }
+  
+  
+  th, td {
+    border: 1px solid rgb(219, 213, 213);
+    border-collapse: collapse;
+    text-align: center;
+    font-weight: 600;
+  
+  }
+  
+  tr:nth-child(odd) {
+    background: #f5f5f5;
+  }
+  
+  ul {
+    box-shadow: 0 0 10px rgba(179, 178, 178, 0.5);
+    text-align: center;
+    padding: 3rem;
+    margin: 0 5rem;
+  }
+  
+  .instr h2 {
+  text-align: center;
+  }
+  
+  
+  li {
+    list-style-type: none;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  hr {
+    width: 60px;
+    margin: 0 auto;
+    border: 1px solid rgb(121, 120, 120);
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(155, 152, 152);
+  }
+  
+  
+  @media screen and (max-width: 800px) {
+    #card {
+      width: 100%;
+    }
+    table {
+      width: 100%;
+    }
+    .instr {
+      width: 100%;
+    }
+    h1.h1{
+      font-size: 3rem;
+    }
+    header {
+      height: 200px;
+    }
+  
+    ul{
+      margin: 0;
+    }
+  }
+  
