@@ -16,3 +16,8 @@ li span {
 li span:hover {
     border-bottom: 5px solid #0d5eb0;
 }
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
