@@ -23,21 +23,28 @@
                 href="/"
                 class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom"
               >
-                <!-- <svg class="bi me-2" width="30" height="24">
-                  <use xlink:href="#bootstrap"></use>
-                </svg> -->
                 <span class="fs-5 fw-semibold">Christalena's Kitchen </span>
               </a>
-              <ul class="list-unstyled ps-0">
+              <ul class="list-unstyled ps-0 d-flex d-sm-block">
                 <li class="mb-1">
-                  <button onclick="handleClick('../home')"
+                  <!-- <button onclick="handleClick('../home')"
                     class="btn btn-toggle align-items-center rounded collapsed"
                     data-bs-toggle="collapse"
                     data-bs-target="#home-collapse"
                     aria-expanded="false"
                   >
                     Home
-                  </button>
+                  </button> -->
+
+                  <button
+                  class="btn btn-toggle align-items-center rounded collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#home-collapse"
+                  aria-expanded="false"
+                >
+                  <span class="funcLink">Home</span>
+                </button>
+
                 </li>
                 <li class="mb-1">
                   <button
@@ -50,10 +57,14 @@
                   </button>
                   <div class="collapse" id="dashboard-collapse" style="">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                      <li onclick="handleClick('greek/mousaka')" id="mousaka" class="px-4 py-1"><span>Mousaka</span></li>
-                      <li onclick="handleClick('greek/pastitsio')" class="px-4 py-1"><span>Pastitsio</span></li>
-                      <li onclick="handleClick('greek/souvlaki')" class="px-4 py-1"><span>Souvlaki</span></li>
-                      <li onclick="handleClick('greek/spanakopita')" class="px-4 py-1"><span>Spanakopita</span></li>
+                      <!-- <li onclick="handleClick('greek/mousaka')" id="mousaka" class="px-4 py-1"><span class="funcLink">Mousaka</span></li>
+                      <li onclick="handleClick('greek/pastitsio')" class="px-4 py-1"><span class="funcLink">Pastitsio</span></li>
+                      <li onclick="handleClick('greek/souvlaki')" class="px-4 py-1"><span class="funcLink">Souvlaki</span></li>
+                      <li onclick="handleClick('greek/spanakopita')" class="px-4 py-1"><span class="funcLink">Spanakopita</span></li> -->
+                      <li class="px-4 py-1"><span class="funcLink greek" id="mousaka">Mousaka</span></li>
+                      <li class="px-4 py-1"><span class="funcLink greek" id="pastitsio">Pastitsio</span></li>
+                      <li class="px-4 py-1"><span class="funcLink greek" id="souvlaki">Souvlaki</span></li>
+                      <li class="px-4 py-1"><span class="funcLink greek" id="spanakopita">Spanakopita</span></li>
                     </ul>
                   </div>
                 </li>
@@ -68,15 +79,19 @@
                   </button>
                   <div class="collapse" id="orders-collapse" style="">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                      <li onclick="handleClick('german/eintopf')" id="eintopf" class="px-4 py-1"><span>Eintopf</span></li>
-                      <li onclick="handleClick('german/gruenkohl')" id="gruenkohl" class="px-4 py-1"><span>Grünkohl</span></li>
-                      <li onclick="handleClick('german/labskaus')" id="labskaus" class="px-4 py-1"><span>Labskaus</span></li>
-                      <li onclick="handleClick('german/franzbroetchen')" id="franzbroetchen" class="px-4 py-1"><span>Franzbroetchen</span></li>
+                      <!-- <li onclick="handleClick('german/eintopf')" id="eintopf" class="px-4 py-1"><span class="funcLink">Eintopf</span></li>
+                      <li onclick="handleClick('german/gruenkohl')" id="gruenkohl" class="px-4 py-1"><span class="funcLink">Grünkohl</span></li>
+                      <li onclick="handleClick('german/labskaus')" id="labskaus" class="px-4 py-1"><span class="funcLink">Labskaus</span></li>
+                      <li onclick="handleClick('german/franzbroetchen')" id="franzbroetchen" class="px-4 py-1"><span class="funcLink">Franzbroetchen</span></li> -->
+                      <li class="px-4 py-1"><span class="funcLink german" id="eintopf">Eintopf</span></li>
+                      <li class="px-4 py-1"><span class="funcLink german" id="gruenkohl">Grünkohl</span></li>
+                      <li class="px-4 py-1"><span class="funcLink german" id="labskaus">Labskaus</span></li>
+                      <li class="px-4 py-1"><span class="funcLink german" id="franzbroetchen">Franzbroetchen</span></li>
                     </ul>
                   </div>
                 </li>
-                <li class="border-top my-3"></li>
-                <li class="mb-1">
+                <li class="border-top my-3 d-none d-sm-block"></li>
+                <li class="mb-1 d-none d-sm-block">
                   <button
                     class="btn btn-toggle align-items-center rounded collapsed"
                     data-bs-toggle="collapse"
