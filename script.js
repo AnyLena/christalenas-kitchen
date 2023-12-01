@@ -34,6 +34,15 @@ function changeIframe(e) {
 // }
 
 
+// Button alert
+const btn = document.querySelector('#btn')
+
+const alertMsg = () => alert("Error. Backend not Found. You have to write down the recipe by yourself...")
+
+btn && btn.addEventListener('click', alertMsg)
+
+
+
 //Carousel slider
 window.onload = function () { 
 	let slides = 
@@ -64,9 +73,3 @@ window.onload = function () {
 	}, 1500); 
 };
 
-// Button alert
-const btn = document.querySelector('#btn')
-
-const alertMsg = () => alert("Error. Backend not Found. You have to write down the recipe by yourself...")
-
-btn.addEventListener('click', alertMsg)
