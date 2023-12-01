@@ -4,7 +4,7 @@ const recipes = document.querySelector("#iframe");
 linkClick.forEach((element) => element.addEventListener("click", changeIframe));
 
 function changeIframe(e) {
-  const arr = e.target.classList;
+  const arr = e.target.parentNode.parentNode.classList;
 
   if (Object.values(arr).includes("greek")) {
     recipes.src = `./recipes/greek/${e.target.id}.html`;
