@@ -32,6 +32,9 @@ function changeIframe(e) {
 // const handleClick = (recipe) => {
 //     recipes.src = `./recipes/${recipe}.html`
 // }
+
+
+//Carousel slider
 window.onload = function () { 
 	let slides = 
 		document.getElementsByClassName('carousel-item'); 
@@ -61,7 +64,7 @@ window.onload = function () {
 	}, 1500); 
 };
 
-
+// Button alert
 const btn = document.querySelector('#btn')
 
 const alertMsg = () => alert("Error. Backend not Found. You have to write down the recipe by yourself...")
