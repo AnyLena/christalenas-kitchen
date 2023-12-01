@@ -16,11 +16,7 @@ function changeIframe(e) {
 }
 
 
-const btn = document.querySelector('#btn')
 
-const alertMsg = () => alert("Error. Backend not Found. You have to write down the recipe by yourself...")
-
-btn.addEventListener('click', alertMsg)
 
 
 
@@ -64,3 +60,10 @@ window.onload = function () {
 		} 
 	}, 1500); 
 };
+
+
+const btn = document.querySelector('#btn')
+
+const alertMsg = () => alert("Error. Backend not Found. You have to write down the recipe by yourself...")
+
+btn.addEventListener('click', alertMsg)
