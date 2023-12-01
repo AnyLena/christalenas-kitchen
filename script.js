@@ -10,6 +10,8 @@ function changeIframe(e) {
     recipes.src = `./recipes/greek/${e.target.id}.html`;
   } else if (Object.values(arr).includes("german")) {
     recipes.src = `./recipes/german/${e.target.id}.html`;
+  } else if (Object.values(arr).includes("aboutus")) {
+    recipes.src = `./home.html#aboutus`;
   } else {
     recipes.src = `./home.html`;
   }
